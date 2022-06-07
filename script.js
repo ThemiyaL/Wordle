@@ -3,6 +3,7 @@ var inputs = t1.querySelectorAll("input");
 
 //This would normally come from the server
 var correctAnswer = "smart";
+var userGuess = "";
 var guessCount = 0;
 
 for(var i = 0; i < inputs.length; i++){
@@ -15,6 +16,9 @@ function checkInput(event){
   console.log(this);
   //if guessCount == 5 do things
   //if not don't
-  if(guessCount == 5) alert("do things");
+  if(guessCount == 5) doThings();
 }
 //goal: activate input boxes
+function doThings(){
+    
+}

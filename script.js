@@ -1,34 +1,20 @@
-function doIt(){
+var t1 = document.getElementById("t1");
+var inputs = t1.querySelectorAll("input");
 
-    const word1 = document.getElementById("word1");
-    const word2 = document.getElementById("word2");
-    const word3 = document.getElementById("word3");
-    const word4 = document.getElementById("word4");
-    const word5 = document.getElementById("word5");
-    const word6 = document.getElementById("word6");
-    word1.addEventListener("change", checkWord);
-    word2.addEventListener("change", checkWord);
-    word3.addEventListener("change", checkWord);
-    word4.addEventListener("change", checkWord);
-    word5.addEventListener("change", checkWord);
-    word6.addEventListener("change", checkWord);
+//This would normally come from the server
+var correctAnswer = "smart";
+var guessCount = 0;
 
-    var ANSWER = Math.floor(Math.random() * 100)+1;
-
-
-    function checkWord(e){
-        var guessArray = this.value.split();
-        var answerArray = ANSWER.split();
-
-        for(var i = 0; i < 5; i++){
-
-        }
-
-
-        alert("Hello");
-        console.log(this);
-        console.log(this.value);
-        console.log(e);
-    }
+for(var i = 0; i < inputs.length; i++){
+  console.log(inputs[i]);
+  inputs[i].addEventListener("change", checkInput);
 }
-doIt();
+function checkInput(event){
+  alert("Checked" + this.value);
+  console.log(event);
+  console.log(this);
+  //if guessCount == 5 do things
+  //if not don't
+  if(guessCount == 5) alert("do things");
+}
+//goal: activate input boxes

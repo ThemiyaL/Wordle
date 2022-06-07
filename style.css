@@ -1,4 +1,10 @@
-
-form label.required{
-    border: 5px solid black;
-}
+.word input{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 5px;
+    background: lightgray;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+  }

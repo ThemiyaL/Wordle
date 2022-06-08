@@ -3,13 +3,16 @@ var inputs = t1.querySelectorAll("input");
 
 //This would normally come from the server
 var correctAnswer = "smart";
-var userGuess = "";
+//var userGuess = "";
 var guessCount = 0;
-
-for(var i = 0; i < inputs.length; i++){
+const guess = ["", "", "", "", ""];
+for(var j = 0; j < 6; j++){
+  for(var i = 0; i < inputs.length; i++){
   console.log(inputs[i]);
   inputs[i].addEventListener("change", checkInput);
+  }
 }
+
 function checkInput(event){
   alert("Checked" + this.value);
   console.log(event);

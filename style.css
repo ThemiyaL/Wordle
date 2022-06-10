@@ -3,8 +3,11 @@
     width: 50px;
     display: inline-block;
     margin: 5px;
-    background: lightgray;
+    background: rgb(91, 154, 226);
     text-align: center;
     color: black;
     font-size: 30px;
+  }
+  body {
+    background-color: rgb(107, 235, 149);
   }

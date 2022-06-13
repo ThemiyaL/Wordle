@@ -26,11 +26,11 @@ function checkGuess(word){
   var results = new Array();
   alert(guess);
     for(var i = 0; i < 5; i++){
-      if(answer[i].contains(guess[i]) && answer[i] == guess[i]){
+      if(answer[i].includes(guess[i]) && answer[i] == guess[i]){
         results.push(2);
       }
       for(var j = 0; j < 5; J++){
-        if(answer[i].contains(guess[i]) && answer[i] == guess[i]){
+        if(answer[i].includes(guess[i]) && answer[i] == guess[i]){
           results.push(1);
         }
         else{
@@ -46,7 +46,7 @@ function checkGuess(word){
 //goal: activate input boxes
 function checkGuess(answer, guess){
   for(var i = 0; i < 5; i++){
-    if(answer.contains(guess[i]) && answer[i] == guess[i]){
+    if(answer.includes(guess[i]) && answer[i] == guess[i]){
       //same position
       alert("same position");
     }

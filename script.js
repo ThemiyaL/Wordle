@@ -46,7 +46,7 @@ function checkGuess(word){
 //goal: activate input boxes
 function checkGuess(answer, guess){
   for(var i = 0; i < 5; i++){
-    if(answer.includes(guess[i]) && answer[i] == guess[i]){
+    if(answer.contains(guess[i]) && answer[i] == guess[i]){
       //same position
       alert("same position");
     }
